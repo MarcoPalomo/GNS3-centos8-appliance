@@ -1,0 +1,46 @@
+{
+    "name": "Centos",
+    "category": "guest",
+    "description": "The last CentOS Linux distribution alive !!!",
+    "vendor_name": "CentOS Linux",
+    "vendor_url": "https://www.centos.org/",
+    "documentation_url": "https://wiki.centos.org/",
+    "product_name": "Centos",
+    "product_url": "https://www.centos.org/download/",
+    "registry_version": 5,
+    "status": "stable",
+    "availability": "free",
+    "maintainer": "GNS3 Team",
+    "maintainer_email": "developers@gns3.net",
+    "usage": "Username: osboxes.org\nPassword: osboxes.org",
+    "port_name_format": "eth{0}",
+    "qemu": {
+        "adapter_type": "virtio-net-pci",
+        "adapters": 1,
+        "ram": 2048,
+        "hda_disk_interface": "ide",
+        "arch": "x86_64",
+        "console_type": "spice",
+        "boot_priority": "c",
+        "kvm": "require",
+        "options": "-vga qxl"
+    },
+    "images": [
+
+        {
+            "filename": "CnTos-8.2-2004-VM-64bit.7z",
+            "version": "8.2-2004",
+            "md5sum": "cecbbd984ab67368c0f1d368945b22a1",
+            "filesize": 1236521735,
+            "download_url": "http://www.osboxes.org/centos/"
+        }
+    ],
+    "versions": [
+        {
+            "name": "8.2-2004",
+            "images": {
+                "hda_disk_image": "CnTos-8.2-2004-VM-64bit.7z"
+            }
+        }
+    ]
+}
